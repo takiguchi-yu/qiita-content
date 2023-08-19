@@ -1,6 +1,6 @@
 # qiita-content
 
-[![Publish articles](https://github.com/takiguchi-yu/qiita-content/actions/workflows/publish.yml/badge.svg)](https://github.com/takiguchi-yu/qiita-content/actions/workflows/publish.yml)
+[![textlint & reviewdog](https://github.com/takiguchi-yu/qiita-content/actions/workflows/textlint.yml/badge.svg)](https://github.com/takiguchi-yu/qiita-content/actions/workflows/textlint.yml) [![Publish articles](https://github.com/takiguchi-yu/qiita-content/actions/workflows/publish.yml/badge.svg)](https://github.com/takiguchi-yu/qiita-content/actions/workflows/publish.yml)
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 
