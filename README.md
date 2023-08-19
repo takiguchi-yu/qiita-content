@@ -38,10 +38,13 @@ npx qiita new [ファイル名]
 
 削除は [Qiita](https://qiita.com/takiguchi-yu) 上から行う。
 
+浮動小数点小数点
+
 ## 文章校正について
 
-工事中...
+工事中..。
 
 ## 参考資料
 
-- [https://qiita.com/Qiita/items/32c79014509987541130](Qiitaの記事をGitHubリポジトリで管理する方法)
+- [Qiitaの記事をGitHubリポジトリで管理する方法](https://qiita.com/Qiita/items/32c79014509987541130)
+- [ZOZO TECH BLOGを支える技術 #2 執筆をサポートするCI/CD](https://techblog.zozo.com/entry/techblog-writing-support-by-ci-cd)

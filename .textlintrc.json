@@ -1,0 +1,14 @@
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    // 技術文書向けのtextlintルールプリセット
+    // See https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing
+    "preset-ja-technical-writing": {
+      "max-kanji-continuous-len": {
+        "max": 6,
+        "allow": ["倍精度浮動小数点数"]
+      }
+    }
+  }
+}
