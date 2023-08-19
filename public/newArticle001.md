@@ -1,7 +1,7 @@
 ---
 title: Qiita CLI で Qiita にデプロイ 
 tags:
-  - ''
+  - 'cli'
 private: true
 updated_at: ''
 id: null
