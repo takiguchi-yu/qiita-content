@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Run textlint..."
+DIFF_FILES=`git diff --name-status origin/main --diff-filter=MA | grep -E ".*.md" | cut -f2`
+if [ -z "${DIFF_FILES}" ]; then exit 0; fi
+npx textlint $(echo ${DIFF_FILES})
