@@ -7,11 +7,12 @@ on:
     paths:
       - 'public/*.md'
 
-env:
-  REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   linter:
+    permissions:
+      checks: write
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -34,6 +35,8 @@ jobs:
         run: npm ci
 
       - name: 'textlint & reviewdog'
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ (github.event_name == 'pull_request') }}
         run: |
           DIFF_FILES=`git diff --name-status origin/main --diff-filter=MA | grep -E "public/.*.md" | cut -f2`

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "textlint public/*.md"
+    "lint": "textlint *.md"
   },
   "devDependencies": {
     "@qiita/qiita-cli": "^1.0.0",
