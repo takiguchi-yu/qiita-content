@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "textlint public/*.md"
+    "lint": "textlint *.md"
   },
   "devDependencies": {
     "@qiita/qiita-cli": "^1.0.0",
+    "lint-staged": "^14.0.0",
     "prettier": "^3.0.2",
+    "simple-git-hooks": "^2.9.0",
     "textlint": "^13.3.3",
     "textlint-rule-preset-ja-technical-writing": "^8.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "npx textlint --fix ."
+    ]
   }
 }

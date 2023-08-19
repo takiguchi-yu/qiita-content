@@ -38,11 +38,9 @@ npx qiita new [ファイル名]
 
 削除は [Qiita](https://qiita.com/takiguchi-yu) 上から行う。
 
-浮動小数点小数点
-
 ## 文章校正について
 
-工事中..。
+mainブランチに pull request すると textlint & reviewdog が走るようになっている。
 
 ## 参考資料
 
