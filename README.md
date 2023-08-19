@@ -40,7 +40,7 @@ npx qiita new [ファイル名]
 
 ## 文章校正について
 
-工事中..。
+mainブランチに pull request すると textlint & reviewdog が走るようになっている。
 
 ## 参考資料
 
