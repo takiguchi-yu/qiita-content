@@ -17,8 +17,8 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": [
-      "npx textlint --fix ."
+    "*.md": [
+      "npx textlint --fix"
     ]
   }
 }
