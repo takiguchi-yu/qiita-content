@@ -9,4 +9,4 @@ organization_url_name: null
 slide: false
 ---
 
-はじめてのデプロイ
+デプロイしてみた
