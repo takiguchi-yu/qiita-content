@@ -1,16 +1,14 @@
 {
   "name": "qiita-content",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "textlint public/*.md"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@qiita/qiita-cli": "^1.0.0",
-    "prettier": "^3.0.2"
+    "prettier": "^3.0.2",
+    "textlint": "^13.3.3",
+    "textlint-rule-preset-ja-technical-writing": "^8.0.0"
   }
 }
