@@ -31,7 +31,7 @@ jobs:
           reviewdog_version: latest
 
       - name: 'Install node dependencies'
-        uses: npm ci
+        run: npm ci
 
       - name: 'textlint & reviewdog'
         if: ${{ (github.event_name == 'pull_request') }}
