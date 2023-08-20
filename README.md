@@ -10,8 +10,8 @@
 - [記事の作成](#記事の作成)
 - [記事の削除](#記事の削除)
 - [文章校正について](#文章校正について)
-      - [パターン① github actions](#パターン1-github-actions)
-      - [パターン② husky pre-commit](#パターン2-husky-pre-commit)
+  - [パターン① github actions](#パターン1-github-actions)
+  - [パターン② husky pre-commit](#パターン2-husky-pre-commit)
 - [参考資料](#参考資料)
 
 <!-- /code_chunk_output -->
