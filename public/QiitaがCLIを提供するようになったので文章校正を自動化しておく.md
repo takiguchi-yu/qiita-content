@@ -1,10 +1,10 @@
 ---
 title: QiitaがCLIを提供するようになったので文章校正を自動化しておく
 tags:
-  - 'QiitaCLI'
+  - QiitaCLI
 private: false
-updated_at: ''
-id: null
+updated_at: '2023-08-20T22:08:26+09:00'
+id: 0ee440ec499f840ee738
 organization_url_name: null
 slide: false
 ---
