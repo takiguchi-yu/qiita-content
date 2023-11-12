@@ -10,7 +10,7 @@
     "@qiita/qiita-cli": "^1.0.0",
     "husky": "^8.0.3",
     "prettier": "^3.0.2",
-    "textlint": "^13.3.3",
+    "textlint": "^13.4.0",
     "textlint-rule-preset-ja-technical-writing": "^8.0.0"
   }
 }
