@@ -5,15 +5,17 @@ tags:
   - リトライ
   - 再接続
 private: false
-updated_at: '2023-02-12T10:37:38+09:00'
+updated_at: '2023-09-24T12:18:08+09:00'
 id: ddcffaebc4b552b90c73
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
+### Exponential Backoff（指数バックオフ）とは
+
+Exponential Backoff とはリトライの仕組みの一種で、リトライ間隔を徐々に広げていくアルゴリズムになります。1秒→3秒→9秒→27秒... のように指数関数的にリトライ間隔を広げることでアプリケーションの信頼性を向上させて、開発者の運用コストを削除します。
+
 ### アルゴリズム
-
-
-
 
 ### WebSocket接続処理のソースコード全体（実装例）
 

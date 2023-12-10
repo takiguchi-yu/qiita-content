@@ -8,6 +8,7 @@ updated_at: '2021-02-17T20:57:04+09:00'
 id: e086c00daaef5e03dc4c
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 IAM とは AWS サービス間の認可をするための AWS ユーザーを管理するためのサービスである。
 このサービス自体はとっても地味だが、 AWS で何をするにも必ず関わってくるサービスなので、おさえておくと良い。

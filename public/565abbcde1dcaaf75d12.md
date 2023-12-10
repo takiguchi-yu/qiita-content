@@ -11,6 +11,7 @@ updated_at: '2021-11-14T14:42:37+09:00'
 id: 565abbcde1dcaaf75d12
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 `Assume Role` を使ってAWSの別アカウントから利用料金を取得します。
 

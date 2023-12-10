@@ -9,6 +9,10 @@
         "max": 6,
         "allow": ["倍精度浮動小数点数"]
       }
+    },
+    "ja-no-mixed-period": {
+      "allowPeriodMarks": [":"],
+      "forceAppendPeriod": true
     }
   }
 }

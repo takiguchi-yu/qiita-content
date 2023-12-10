@@ -7,6 +7,7 @@ updated_at: '2023-08-20T22:08:26+09:00'
 id: 0ee440ec499f840ee738
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 Qiita CLI が誕生したことで Qiita の記事を GitHub で管理できるようになり、github actions で記事公開までができるようになりました。
