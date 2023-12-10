@@ -22,11 +22,6 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Approve & enable auto-merge for Dependabot PR
-        # パッチバージョンのアップデート、もしくは開発環境のみ利用されるライブラリのマイナーバージョンのアップデート
-        # CI が pass したとき
-        if: |
-          steps.metadata.outputs.update-type == 'version-update:semver-patch' ||
-          (steps.metadata.outputs.update-type == 'version-update:semver-minor' && steps.metadata.outputs.dependency-type == 'direct:development')
         run: |
           gh pr review --approve "$PR_URL"
           gh pr edit "$PR_URL" -t "(auto merged) $PR_TITLE"
