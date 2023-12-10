@@ -102,3 +102,35 @@ npx textlint $(echo ${DIFF_FILES})
 #### その他
 
 自分のエディタに prettier も設定しておくとさらに快適になります。（ここでは割愛）
+
+textlintrc.json の設定は Qiita なので少し緩めに設定しておきます。
+
+<details><summary>textlintrc.json 詳細</summary>
+
+```json
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    // 技術文書向けのtextlintルールプリセット
+    // See https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing
+    "preset-ja-technical-writing": {
+      "max-kanji-continuous-len": {
+        "max": 6,
+        "allow": ["倍精度浮動小数点数"]
+      },
+      "sentence-length": {
+        "max": 125 // １行あたりの文字数
+      },
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [":"], // 文末が ":" で終わることを許可
+        "allowEmojiAtEnd": true, // 文末が絵文字で終わることを許可
+        "forceAppendPeriod": true
+      },
+      "no-exclamation-question-mark": false // 感嘆符（!！）、疑問符（?？）で文章が終わることを許可
+    }
+  }
+}
+```
+
+</details>
