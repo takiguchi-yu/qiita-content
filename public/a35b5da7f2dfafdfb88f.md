@@ -15,7 +15,7 @@ ignorePublish: false
 
 # はじめに
 
-『[こちらの記事](https://qiita.com/takiguchi-yu/items/2b2af40f7ef498a7f4e3)』の延長で、 Amazon RDS のイベント(起動や停止など)を `EventBridge` + `Chatbot` 経由 で Slack に通知するようにしました。
+『[こちらの記事](https://qiita.com/takiguchi-yu/items/2b2af40f7ef498a7f4e3)』の延長で、 Amazon RDS のイベント(起動や停止など)を `EventBridge` + `Chatbot` 経由 で Slack 通知するようにしました。
 
 ![chatboteventbridge.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/59081/725c7c0a-f624-bf00-2e59-c2780ef9d334.png)
 
@@ -25,9 +25,9 @@ https://aws.amazon.com/jp/about-aws/whats-new/2021/04/aws-chatbot-now-expands-co
 
 # やること
 
-* SNS トピックの作成
-* Chatbot の作成
-* EventBridge ルールの作成
+- SNS トピックの作成
+- Chatbot の作成
+- EventBridge ルールの作成
 
 # SNS トピックの作成
 
