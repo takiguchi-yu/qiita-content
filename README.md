@@ -23,7 +23,7 @@ git clone git@github.com:takiguchi-yu/qiita-content.git
 cd qiita-content
 npm ci
 # 以下のコマンドでバージョンが表示されればセットアップは完了
-npx qiita version
+npx qiita version && npx qiita help
 ```
 
 Qiita CLI に関する詳細は以下の README を参照してください。
