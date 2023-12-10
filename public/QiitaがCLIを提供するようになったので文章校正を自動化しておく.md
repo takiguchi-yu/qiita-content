@@ -3,7 +3,7 @@ title: QiitaがCLIを提供するようになったので文章校正を自動�
 tags:
   - QiitaCLI
 private: false
-updated_at: '2023-08-20T22:08:26+09:00'
+updated_at: '2023-12-10T20:13:55+09:00'
 id: 0ee440ec499f840ee738
 organization_url_name: null
 slide: false
@@ -107,7 +107,7 @@ textlintrc.json の設定は Qiita なので少し緩めに設定しておきま
 
 <details><summary>textlintrc.json 詳細</summary>
 
-```json
+```jsonc
 {
   "plugins": {},
   "filters": {},
