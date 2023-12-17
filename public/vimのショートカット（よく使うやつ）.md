@@ -1,5 +1,5 @@
 ---
-title: 'vimのショートカット（よく使うやつだけ）[適宜更新]'
+title: 'vimのショートカット（よく使うやつ）'
 tags:
   - Vim
 private: false
