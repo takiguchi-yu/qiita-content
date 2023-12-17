@@ -1,9 +1,9 @@
 ---
-title: 'vimのショートカット（よく使うやつ）'
+title: vimのショートカット（よく使うやつ）
 tags:
   - Vim
 private: false
-updated_at: '2023-12-10T19:42:27+09:00'
+updated_at: '2023-12-18T02:32:21+09:00'
 id: 85f9e55006d200c868ea
 organization_url_name: null
 slide: false
