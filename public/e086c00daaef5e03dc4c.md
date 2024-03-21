@@ -10,7 +10,8 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
-IAM とは AWS サービス間の認可をするための AWS ユーザーを管理するためのサービスである。
+
+IAM とは AWS サービス間の認可をするための AWS ユーザーを管理するためのサービスだ。
 このサービス自体はとっても地味だが、 AWS で何をするにも必ず関わってくるサービスなので、おさえておくと良い。
 
 # IAM 利用イメージ

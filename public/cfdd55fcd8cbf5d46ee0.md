@@ -13,11 +13,12 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
+
 # 【Swagger】Docker環境で簡易モッキング
 
 `Swagger`で定義したAPI仕様を使ってスタブ（モック）サーバーを構築します。こちらのソースコードを使って説明していきます。
 
-* https://github.com/takiguchi-yu/SwaggerMocking
+- https://github.com/takiguchi-yu/SwaggerMocking
 
 ## アーキテクチャ
 
@@ -47,10 +48,10 @@ ignorePublish: false
 
 swagger.yamlはVSCodeで記述していきます。以下の拡張機能をインストールすることで快適になります。
 
-* [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
-  * Swaggerファイルをプレビューできるようになります。
-* [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
-  * 自動補完(IntelliSense)が効いてくれるようになります。
+- [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
+  - Swaggerファイルをプレビューできるようになる。
+- [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
+  - 自動補完(IntelliSense)が効いてくれるようになる。
 
 ### サンプル
 
@@ -133,7 +134,8 @@ $ curl -X 'GET' \
 ```
 
 ## 参考資料
-* [OpenAPI仕様](https://swagger.io/specification/)
-* [SwaggerCodegen仕様](https://github.com/swagger-api/swagger-codegen/tree/3.0.0)
-  * ブランチはmasterではなく3.0.0に最新仕様が記述されています
-* [Node.js Web アプリケーションを Docker 化する](https://nodejs.org/ja/docs/guides/nodejs-docker-webapp/)
+
+- [OpenAPI仕様](https://swagger.io/specification/)
+- [SwaggerCodegen仕様](https://github.com/swagger-api/swagger-codegen/tree/3.0.0)
+  - ブランチはmasterではなく3.0.0に最新仕様が記述されている。
+- [Node.js Web アプリケーションを Docker 化する](https://nodejs.org/ja/docs/guides/nodejs-docker-webapp/)
