@@ -4,7 +4,7 @@ tags:
   - macOS
   - ventura
 private: false
-updated_at: '2024-02-04T22:00:11+09:00'
+updated_at: '2024-07-27T12:54:50+09:00'
 id: f39f6abbeb4cda3ef4c2
 organization_url_name: null
 slide: false

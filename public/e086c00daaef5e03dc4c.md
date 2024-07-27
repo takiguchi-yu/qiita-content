@@ -4,7 +4,7 @@ tags:
   - AWS
   - IAM
 private: false
-updated_at: '2021-02-17T20:57:04+09:00'
+updated_at: '2024-07-27T12:54:50+09:00'
 id: e086c00daaef5e03dc4c
 organization_url_name: null
 slide: false

@@ -7,7 +7,7 @@ tags:
   - swagger-ui
   - swagger-codegen
 private: false
-updated_at: '2021-10-23T22:09:26+09:00'
+updated_at: '2024-07-27T12:54:50+09:00'
 id: cfdd55fcd8cbf5d46ee0
 organization_url_name: null
 slide: false
