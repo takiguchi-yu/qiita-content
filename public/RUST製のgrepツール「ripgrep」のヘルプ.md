@@ -1,10 +1,10 @@
 ---
 title: RUST製のgrepツール「ripgrep」のヘルプ
 tags:
-  - 'grep'
+  - grep
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-07-27T12:54:50+09:00'
+id: 1a3ecb3f103f5239fb04
 organization_url_name: null
 slide: false
 ignorePublish: false
