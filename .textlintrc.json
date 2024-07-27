@@ -7,7 +7,7 @@
     "preset-ja-technical-writing": {
       "max-kanji-continuous-len": {
         "max": 6,
-        "allow": ["倍精度浮動小数点数"]
+        "allow": ["倍精度浮動小数点数", "複数回指定可能"]
       },
       "sentence-length": {
         "max": 125 // １行あたりの文字数
