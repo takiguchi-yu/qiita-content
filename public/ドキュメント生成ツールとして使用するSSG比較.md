@@ -1,7 +1,7 @@
 ---
 title: ドキュメント生成ツールとして使用するSSG比較
 tags:
-  - ''
+  - 'SSG'
 private: false
 updated_at: ''
 id: null
