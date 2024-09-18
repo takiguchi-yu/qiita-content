@@ -3,7 +3,7 @@ title: vimのショートカット（よく使うやつ）
 tags:
   - Vim
 private: false
-updated_at: '2024-07-27T12:54:50+09:00'
+updated_at: '2024-09-18T13:54:17+09:00'
 id: 85f9e55006d200c868ea
 organization_url_name: null
 slide: false
