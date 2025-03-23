@@ -6,5 +6,8 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "files.associations": { "*.json": "jsonc" }
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "cSpell.words": ["qiita", "reviewdog", "takiguchi", "textlint", "ZOZO"]
 }

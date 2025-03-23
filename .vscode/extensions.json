@@ -1,3 +1,8 @@
 {
-  "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "hediet.vscode-drawio"]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "hediet.vscode-drawio",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }
