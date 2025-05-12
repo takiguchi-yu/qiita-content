@@ -1,10 +1,10 @@
 ---
 title: NextJS + App Router + RSC の採用＝ローディング UX 設計もセット
 tags:
-  - 'Next.js'
+  - Next.js
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-05-12T21:32:36+09:00'
+id: 1012670ec8c514c69fc5
 organization_url_name: null
 slide: false
 ignorePublish: false
