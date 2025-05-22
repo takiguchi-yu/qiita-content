@@ -1,10 +1,10 @@
 ---
 title: Next.js の Middleware で GraphQL を呼び出したかった
 tags:
-  - 'Next.js'
+  - Next.js
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-05-22T22:56:06+09:00'
+id: bde312fed7208e23e6ee
 organization_url_name: null
 slide: false
 ignorePublish: false
