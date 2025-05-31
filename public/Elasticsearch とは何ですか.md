@@ -1,10 +1,10 @@
 ---
 title: Elasticsearch とは何ですか
 tags:
-  - 'Elasticsearch'
+  - Elasticsearch
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-05-31T21:43:45+09:00'
+id: a608e35bcbe989d160e9
 organization_url_name: null
 slide: false
 ignorePublish: false
