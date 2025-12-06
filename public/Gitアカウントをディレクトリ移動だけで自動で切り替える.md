@@ -1,11 +1,11 @@
 ---
 title: Gitアカウントをディレクトリ移動だけで自動で切り替える
 tags:
-  - 'Git'
-  - '開発環境'
+  - Git
+  - 開発環境
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-12-06T16:18:45+09:00'
+id: 6f5bf37374d8516721ed
 organization_url_name: null
 slide: false
 ignorePublish: false
