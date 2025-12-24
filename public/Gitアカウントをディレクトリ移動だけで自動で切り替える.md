@@ -18,9 +18,9 @@ ignorePublish: false
 ```bash
 # ディレクトリ移動だけでGitアカウントを自動で切り替わる
 $ cd ~/git/work/work-repo/
-$                                         💼 Work
+$                            💼 Work
 $ cd ~/git/private/private-repo/
-$                                         🏠 Private
+$                            🏠 Private
 ```
 
 ## アプローチの概要
@@ -67,8 +67,11 @@ Gitアカウントごとにディレクトリを分けておく。こうして�
     name = takiguchi-yu
 [core]
     # 仕事用のSSH鍵を指定
-    sshCommand = "ssh -i ~/.ssh/id_rsa_work -F /dev/null"
+    sshCommand = "ssh -i ~/.ssh/id_rsa_work -o IdentitiesOnly=yes -F /dev/null"
 ```
+
+- ※1 `-o IdentitiesOnly=yes` は指定した鍵以外を使わないようにするために付与している。
+- ※2 `-F /dev/null` は `~/.ssh/config` の設定を無視するために付与している。
 
 ### `~/.gitconfig-private`
 
@@ -79,7 +82,7 @@ Gitアカウントごとにディレクトリを分けておく。こうして�
     name = takiguchi-yu
 [core]
     # プライベート用のSSH鍵を指定
-    sshCommand = "ssh -i ~/.ssh/id_rsa_private -F /dev/null"
+    sshCommand = "ssh -i ~/.ssh/id_rsa_private -o IdentitiesOnly=yes -F /dev/null"
 ```
 
 ここでまで設定すれば、ディレクトリ移動だけでGitアカウントが自動で切り替わるようになる。
