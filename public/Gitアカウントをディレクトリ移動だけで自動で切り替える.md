@@ -135,3 +135,17 @@ end
 ```bash
 source ~/.config/fish/functions/fish_right_prompt.fish
 ```
+
+## Step4: SSH鍵をssh-agentに登録する（オプショナル）
+
+SSH鍵にパスフレーズを設定している場合、毎回パスフレーズを入力するのが面倒なので `ssh-agent` に登録しておくと便利。
+
+```bash
+# SSH鍵を追加
+ssh-add ~/.ssh/id_rsa_work
+ssh-add ~/.ssh/id_rsa_private
+
+# macOSのキーチェーンに保存（再起動後も有効）
+ssh-add --apple-use-keychain ~/.ssh/id_rsa_work
+ssh-add --apple-use-keychain ~/.ssh/id_rsa_private
+```
