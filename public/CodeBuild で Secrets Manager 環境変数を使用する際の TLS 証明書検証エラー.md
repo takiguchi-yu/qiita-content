@@ -1,11 +1,11 @@
 ---
 title: CodeBuild で Secrets Manager 環境変数を使用する際の TLS 証明書検証エラー
 tags:
-  - 'AWS'
-  - 'CodeBuild'
+  - AWS
+  - CodeBuild
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-01-22T23:36:27+09:00'
+id: 6c170a47fe576b44cd70
 organization_url_name: null
 slide: false
 ignorePublish: false
