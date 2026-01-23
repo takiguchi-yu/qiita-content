@@ -9,5 +9,5 @@
   "files.associations": {
     "*.json": "jsonc"
   },
-  "cSpell.words": ["qiita", "reviewdog", "takiguchi", "textlint", "Zenn", "ZOZO"]
+  "cSpell.words": ["qiita", "reviewdog", "takiguchi", "textlint", "trixie", "Zenn", "ZOZO"]
 }
