@@ -36,10 +36,10 @@ tls: failed to verify certificate: x509: certificate signed by unknown authority
 
 #### slim 版と標準版の違い
 
-| イメージ          | CA 証明書数        | サイズ | VPC エンドポイント対応 |
-| ----------------- | ------------------ | ------ | ---------------------- |
-| `node:*-slim`     | 50-100個（最小限） | ~200MB | ❌ 一部の CA が欠落    |
-| `node:*-bookworm` | 200-300個（完全）  | ~1GB   | ✅ すべての CA を含む  |
+| イメージ             | CA 証明書数        | サイズ | VPC エンドポイント対応 |
+| -------------------- | ------------------ | ------ | ---------------------- |
+| `node:*-trixie-slim` | 50-100個（最小限） | ~200MB | ❌ 一部の CA が欠落    |
+| `node:*-trixie`      | 200-300個（完全）  | ~1GB   | ✅ すべての CA を含む  |
 
 ### 2. VPC エンドポイントの証明書検証
 
@@ -61,7 +61,7 @@ slim 版では、**Amazon Trust Services などの特定の CA 証明書が不�
 
 ### Docker イメージを slim 版から標準版に変更
 
-`node:*-slim` から `node:*-bookworm` に変更。
+`node:*-slim` から `node:*-trixie` に変更。
 
 ### VPC エンドポイントに Secrets Manager を追加
 
@@ -94,4 +94,4 @@ install:
 
 CodeBuild で VPC 内から Secrets Manager にアクセスする際の TLS 証明書検証エラーは、**Docker イメージの CA 証明書が不足していることが原因**だった。
 
-**解決策**: slim 版のイメージを避け、標準版の `node:*-bookworm` または AWS 管理の `aws/codebuild/standard:*` イメージを使用することで、VPC エンドポイント経由でも正常に動作する。
+**解決策**: slim 版のイメージを避け、標準版の `node:*-trixie` または AWS 管理の `aws/codebuild/standard:*` イメージを使用することで、VPC エンドポイント経由でも正常に動作する。
