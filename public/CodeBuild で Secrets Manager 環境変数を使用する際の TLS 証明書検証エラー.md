@@ -4,7 +4,7 @@ tags:
   - AWS
   - CodeBuild
 private: false
-updated_at: '2026-01-22T23:36:27+09:00'
+updated_at: '2026-01-23T10:46:55+09:00'
 id: 6c170a47fe576b44cd70
 organization_url_name: null
 slide: false
