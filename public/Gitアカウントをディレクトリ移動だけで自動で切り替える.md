@@ -149,3 +149,9 @@ ssh-add ~/.ssh/id_rsa_private
 ssh-add --apple-use-keychain ~/.ssh/id_rsa_work
 ssh-add --apple-use-keychain ~/.ssh/id_rsa_private
 ```
+
+上記を設定してもパスフレーズを求められる場合は以下のコマンドを実行すると回避できることがある。
+
+```sh
+ssh -T git@github.com
+```
