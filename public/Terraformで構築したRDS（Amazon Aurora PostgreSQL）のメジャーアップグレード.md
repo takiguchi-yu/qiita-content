@@ -1,8 +1,8 @@
 ---
 title: Terraformで構築したRDS（Amazon Aurora PostgreSQL）のメジャーアップグレード
 tags:
-  - 'RDS'
-  - 'Terraform
+  - RDS
+  - Terraform
 private: false
 updated_at: ''
 id: null
