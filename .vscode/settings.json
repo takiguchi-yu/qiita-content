@@ -9,5 +9,24 @@
   "files.associations": {
     "*.json": "jsonc"
   },
-  "cSpell.words": ["qiita", "reviewdog", "takiguchi", "textlint", "trixie", "Zenn", "ZOZO"]
+  "cSpell.words": [
+    "awscli",
+    "direnv",
+    "Dolstra",
+    "Eelco",
+    "envrc",
+    "nixos",
+    "Nixpkgs",
+    "PGHOST",
+    "PGUSER",
+    "pkgs",
+    "qiita",
+    "reviewdog",
+    "takiguchi",
+    "textlint",
+    "tlsv",
+    "trixie",
+    "Zenn",
+    "ZOZO"
+  ]
 }
