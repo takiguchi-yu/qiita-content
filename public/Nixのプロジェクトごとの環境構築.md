@@ -1,11 +1,11 @@
 ---
 title: Nixのプロジェクトごとの環境構築 (flake.nix + direnv)
 tags:
-  - 'Nix'
-  - 'direnv'
+  - direnv
+  - nix
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-05-08T22:55:29+09:00'
+id: 6829626808a4293373b0
 organization_url_name: null
 slide: false
 ignorePublish: false
