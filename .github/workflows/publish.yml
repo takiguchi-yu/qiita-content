@@ -1,42 +1,27 @@
+# Please set 'QIITA_TOKEN' secret to your repository
 name: Publish articles
 
 on:
   push:
     branches:
-      - main # ※デフォルトブランチがmasterの場合は master に書き換えてください
+      - main
   workflow_dispatch:
 
 permissions:
-  contents: write # 最後にGitへプッシュするために必須の設定です
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  publish_articles:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: increments/qiita-cli/actions/publish@v1
         with:
-          node-version: "20"
-
-      - name: Install qiita-cli
-        run: npm install -g @qiita/qiita-cli
-
-      - name: Publish articles
-        env:
-          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
-        run: qiita publish --all
-
-      - name: Commit and push diff
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/*
-          if ! git diff --staged --exit-code --quiet; then
-            git commit -m "Updated by qiita-cli"
-            git push
-          fi
+          qiita-token: ${{ secrets.QIITA_TOKEN }}
