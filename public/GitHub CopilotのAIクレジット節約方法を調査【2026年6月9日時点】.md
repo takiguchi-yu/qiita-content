@@ -1,7 +1,7 @@
 ---
 title: GitHub CopilotのAIクレジット節約方法を調査【2026年6月9日時点】
 tags:
-  - GitHub Copilot
+  - Copilot
 private: false
 updated_at: ''
 id: null
