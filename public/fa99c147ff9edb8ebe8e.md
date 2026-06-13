@@ -90,6 +90,7 @@ rtk init -g --copilot # GitHub Copilot用
 ```
 
 上記のようにコメントを書き、改行してAIにコードを提案（補完）させることで、チャットを利用せずに開発を進められます。
+（コード生成に慣れてしまった今、もはや今さらコード補完の開発なんてできない体ではありますが・・・。）
 
 ## まとめ・所感
 
@@ -97,3 +98,34 @@ rtk init -g --copilot # GitHub Copilot用
 `headroom` はCLIでしか使えず、LLMのAuto機能も利用できません。VSCodeのChat機能を使えばデフォルトで10%オフが適用されるため、無理にCLIに移行するよりVSCode標準機能を使う方が現状はお得かもしれません。（`rtk` は有効です。）
 
 将来的にはAIクレジットのコストが下がることを期待しつつ、今はこれらの節約術を駆使して乗り切るのが良さそうです。
+
+とりあえず rtk は入れておいても良さそう。
+
+```sh
+$ rtk gain
+RTK Token Savings (Global Scope)
+════════════════════════════════════════════════════════════
+
+Total commands:    112
+Input tokens:      1.7M
+Output tokens:     17.1K
+Tokens saved:      1.7M (99.0%)
+Total exec time:   8m47s (avg 4.7s)
+Efficiency meter: ████████████████████████ 99.0%
+
+By Command
+────────────────────────────────────────────────────────────────────────
+  #  Command                   Count   Saved    Avg%    Time  Impact
+────────────────────────────────────────────────────────────────────────
+ 1.  rtk go test ./interna...      3    1.4M  100.0%    2.2s  ██████████
+ 2.  rtk go test ./interna...      7  192.4K   89.0%    3.2s  █░░░░░░░░░
+ 3.  rtk go test ./interna...      6   28.9K   90.3%    3.3s  ░░░░░░░░░░
+ 4.  rtk go test ./cmd/server      2    6.3K   99.7%    4.7s  ░░░░░░░░░░
+ 5.  rtk go test ./cmd/ser...      1    3.1K   99.7%    4.1s  ░░░░░░░░░░
+ 6.  rtk gh pr diff                4    1.0K   12.9%   417ms  ░░░░░░░░░░
+ 7.  rtk git pull                  1     915   99.3%    2.8s  ░░░░░░░░░░
+ 8.  rtk ls -la /Users/tak...      1     437   86.2%    27ms  ░░░░░░░░░░
+ 9.  rtk git status                3     250   63.2%    84ms  ░░░░░░░░░░
+10.  rtk git commit                1     232   98.7%   10.6s  ░░░░░░░░░░
+────────────────────────────────────────────────────────────────────────
+```
