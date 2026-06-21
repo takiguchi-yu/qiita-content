@@ -3,7 +3,7 @@ title: GitHub CopilotのAIクレジット節約方法を調査【2026年6月9日
 tags:
   - copilot
 private: false
-updated_at: '2026-06-09T23:15:16+09:00'
+updated_at: '2026-06-17T12:12:29+09:00'
 id: fa99c147ff9edb8ebe8e
 organization_url_name: null
 slide: false
@@ -40,10 +40,10 @@ headroom wrap claude
 headroom wrap copilot
 ```
 
-- **注意点**: CLI専用です。VSCode内のChatでは使えません（Cursorは利用可能）。
-- **エイリアス**: 毎回打つ手間を省くため `.bashrc` や `.zshrc` に `alias copilot='headroom wrap copilot'` などと設定するのがおすすめです。
-- **SSLエラー回避**: 社内ネットワーク等で弾かれる場合は `pipx inject headroom-ai pip-system-certs` を実行します。
-- **効果確認**: プロキシ起動中、`http://127.0.0.1:8787/dashboard` で削減率や金額を確認できます。
+- **注意点**: CLI専用です。VSCode内のChatでは使えません（Cursorは利用可能）
+- **エイリアス**: 毎回打つ手間を省くため `.bashrc` や `.zshrc` に `alias copilot='headroom wrap copilot'` などと設定するのがおすすめです
+- **SSLエラー回避**: 社内ネットワーク等で弾かれる場合は `pipx inject headroom-ai pip-system-certs` を実行します
+- **効果確認**: プロキシ起動中、`http://127.0.0.1:8787/dashboard` で削減率や金額を確認できます
 
 ### [rtk](https://github.com/chopratejas/headroom)（ターミナル出力の削減ツール）
 
@@ -55,8 +55,8 @@ brew install rtk
 rtk init -g --copilot # GitHub Copilot用
 ```
 
-- **使い方**: 設定後、AIが自律的にコマンドを実行する際、自動的にフィルタリングされます。
-- **効果確認**: 作業後に `rtk gain` コマンドで節約量を確認できます。
+- **使い方**: 設定後、AIが自律的にコマンドを実行する際、自動的にフィルタリングされます
+- **効果確認**: 作業後に `rtk gain` コマンドで節約量を確認できます
 - **アンインストール**: ツール同士が競合した場合などは `rtk init -g --copilot --uninstall` で解除できます。
 
 ### 【Tips】 headroom と rtk の違い
@@ -90,6 +90,7 @@ rtk init -g --copilot # GitHub Copilot用
 ```
 
 上記のようにコメントを書き、改行してAIにコードを提案（補完）させることで、チャットを利用せずに開発を進められます。
+（コード生成に慣れてしまったいま、CDD するかと言われればしないんですが。）
 
 ## まとめ・所感
 
@@ -97,3 +98,8 @@ rtk init -g --copilot # GitHub Copilot用
 `headroom` はCLIでしか使えず、LLMのAuto機能も利用できません。VSCodeのChat機能を使えばデフォルトで10%オフが適用されるため、無理にCLIに移行するよりVSCode標準機能を使う方が現状はお得かもしれません。（`rtk` は有効です。）
 
 将来的にはAIクレジットのコストが下がることを期待しつつ、今はこれらの節約術を駆使して乗り切るのが良さそうです。
+
+
+とりあえず `rtk` は入れておいても良いかなという所感です。
+
+![Cursor_と__.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/59081/65a255a0-f3e9-4ee8-94e6-c34a271853b1.png)
