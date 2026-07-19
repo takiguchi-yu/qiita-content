@@ -6,7 +6,7 @@
     "lint": "textlint *.md"
   },
   "devDependencies": {
-    "@qiita/qiita-cli": "^1.8.0",
+    "@qiita/qiita-cli": "^1.9.1",
     "husky": "^9.1.7",
     "prettier": "^3.8.4",
     "textlint": "^15.7.1",
