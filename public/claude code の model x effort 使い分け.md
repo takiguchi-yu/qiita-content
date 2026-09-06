@@ -1,7 +1,7 @@
 ---
 title: claude code の model x effort 使い分け
 tags:
-  - ''
+  - ClaudeCode
 private: false
 updated_at: ''
 id: null
