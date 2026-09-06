@@ -3,11 +3,13 @@ title: claude code の model x effort 使い分け
 tags:
   - ClaudeCode
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-09-06T15:50:05+09:00'
+id: b3e49152cd0b3c6d4cfa
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 # claude code の model x effort 使い分け
